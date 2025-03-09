@@ -1,0 +1,93 @@
+.hamburger { display: none; }
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        padding-top: 100px;
+    }
+    header {
+        padding: 10px;
+    }
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: #00ff99;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        transition: all 0.3s;
+    }
+    .hamburger:hover {
+        color: #ff00ff;
+        text-shadow: 0 0 10px #ff00ff;
+    }
+    .neon-nav {
+        display: none;
+        flex-direction: column;
+    }
+    .neon-nav.active {
+        display: flex;
+        background: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .neon-nav a {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .page-wrapper {
+        padding: 30px 10px;
+    }
+    footer {
+        font-size: 12px;
+    }
+    /* Previous fixes for layout */
+    .neon-section {
+        padding: 30px 15px;
+        margin: 30px 10px;
+    }
+    h1.glitch-text {
+        font-size: 24px;
+        line-height: 1.2;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    p.neon-text {
+        font-size: 14px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .home-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .home-text {
+        width: 100%;
+        text-align: center;
+    }
+    .home-image {
+        width: 100%;
+    }
+    .home-image img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    body {
+        background-size: cover;
+    }
+    .page-wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}

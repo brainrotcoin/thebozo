@@ -1,0 +1,32 @@
+/* animations.css - Animations & Glitch Effects */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+    25% { text-shadow: -2px -2px 0px #ff00ff, 2px 2px 0px #00ffff; }
+    50% { text-shadow: 2px -2px 0px #ff00ff, -2px 2px 0px #00ffff; }
+    75% { text-shadow: -2px 2px 0px #ff00ff, 2px -2px 0px #00ffff; }
+    100% { text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00ffff; }
+}
+
+.glitch-text {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.glow-hover {
+    transition: 0.3s;
+}
+
+.glow-hover:hover {
+    text-shadow: 0px 0px 15px #ff00ff, 0px 0px 25px #00ffff;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 3s infinite ease-in-out;
+}
